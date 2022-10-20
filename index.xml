@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Karthik Murugesan</title>
-    <link>https://example.com/</link>
+    <link>https://karthikmuru.github.io/</link>
     <description>Recent content on Karthik Murugesan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>You</copyright><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>You</copyright><atom:link href="https://karthikmuru.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
