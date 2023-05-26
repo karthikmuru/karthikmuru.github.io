@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Karthik Murugesan</title>
-    <link>https://karthikmuru.github.io/</link>
-    <description>Recent content on Karthik Murugesan</description>
+    <title>Posts on Karthik Murugesan</title>
+    <link>https://karthikmuru.github.io/posts/</link>
+    <description>Recent content in Posts on Karthik Murugesan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Dec 2022 02:42:06 +0000</lastBuildDate><atom:link href="https://karthikmuru.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Dec 2022 02:42:06 +0000</lastBuildDate><atom:link href="https://karthikmuru.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LeetCode 121: Best time to buy and sell stock</title>
       <link>https://karthikmuru.github.io/posts/2021-12-01-lc/</link>
@@ -17,16 +17,6 @@
 For this problem we need to find the indices $i$ and $j$ , maximising the equation $prices[j] - prices[i]$, given $j &amp;gt; i$. Lets first approach the brute force solution of this problem.
 1. Brute force: Complexity: $O(n^2)$
 This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://karthikmuru.github.io/about/</link>
-      <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
-      
-      <guid>https://karthikmuru.github.io/about/</guid>
-      <description>Github: karthikmuru
-Linkedin: karthikmurugesan28</description>
     </item>
     
   </channel>
