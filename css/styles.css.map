@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/karthik/Documents/projects/portfolio/karthik-portfolio",
+	"sourceRoot": "D:/Projects/portfolio/karthik-portfolio",
 	"sources": [
 		"themes/cactus/assets/scss/style.scss",
 		"themes/cactus/assets/scss/_variables.scss",
