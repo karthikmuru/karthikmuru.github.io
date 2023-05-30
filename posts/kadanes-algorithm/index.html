@@ -9,28 +9,32 @@
   <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> LeetCode 121: Best time to buy and sell stock | Karthik Murugesan</title>
-  <link rel = 'canonical' href = 'https://karthikmuru.github.io/posts/2021-12-01-lc/'>
+  <title> LeetCode 121: Best time to buy and sell stock - Kadane&#39;s Algorithm | Karthik Murugesan</title>
+  <link rel = 'canonical' href = 'https://karthikmuru.github.io/posts/kadanes-algorithm/'>
   <meta name="description" content="Hello there! I&#39;m a passionate software engineer with a knack for creating awesome things with code. Whether it&#39;s tackling complex challenges, optimizing performance, or delivering top-notch solutions, I thrive on making things happen in the world of technology. With a range of experience under my belt, I bring a fun and enthusiastic approach to every project.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta property="og:title" content="LeetCode 121: Best time to buy and sell stock" />
-<meta property="og:description" content="LeetCode 121: Best time to buy and sell stock
-For this problem we need to find the indices i and j , maximising the equation prices[j] - prices[i], given j &gt; i. Lets first approach the brute force solution of this problem.
+  <meta property="og:title" content="LeetCode 121: Best time to buy and sell stock - Kadane&#39;s Algorithm" />
+<meta property="og:description" content="Problem : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+For this problem we need to find the indices i and j, maximising the equation prices[j] - prices[i], given j &gt; i. Lets first approach the brute force solution of this problem.
 1. Brute force: Complexity: O(n^2)
-This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index." />
+This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.
+Code:
+1int maxProfit(vector&lt;int&gt;&amp; prices) { 2	3	int maxProfit = 0; 4	5	for(int i = 0; i &lt; prices." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://karthikmuru.github.io/posts/2021-12-01-lc/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://karthikmuru.github.io/posts/kadanes-algorithm/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-12-01T02:42:06+00:00" />
 <meta property="article:modified_time" content="2022-12-01T02:42:06+00:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="LeetCode 121: Best time to buy and sell stock"/>
-<meta name="twitter:description" content="LeetCode 121: Best time to buy and sell stock
-For this problem we need to find the indices i and j , maximising the equation prices[j] - prices[i], given j &gt; i. Lets first approach the brute force solution of this problem.
+<meta name="twitter:title" content="LeetCode 121: Best time to buy and sell stock - Kadane&#39;s Algorithm"/>
+<meta name="twitter:description" content="Problem : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+For this problem we need to find the indices i and j, maximising the equation prices[j] - prices[i], given j &gt; i. Lets first approach the brute force solution of this problem.
 1. Brute force: Complexity: O(n^2)
-This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index."/>
+This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.
+Code:
+1int maxProfit(vector&lt;int&gt;&amp; prices) { 2	3	int maxProfit = 0; 4	5	for(int i = 0; i &lt; prices."/>
 
   
   
@@ -69,6 +73,8 @@ This is pretty straight forward. We iterate through the entire array and for eac
       <ul>
          
         <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
          
         <li><a href="/about">About</a></li>
         
@@ -111,47 +117,47 @@ This is pretty straight forward. We iterate through the entire array and for eac
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f" aria-label="Facebook">
       <i class="fab fa-facebook " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&text=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&text=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Twitter">
       <i class="fab fa-twitter " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Linkedin">
       <i class="fab fa-linkedin " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&is_video=false&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&is_video=false&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Pinterest">
       <i class="fab fa-pinterest " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock&body=Check out this article: https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm&body=Check out this article: https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f" aria-label="Email">
       <i class="fas fa-envelope " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Pocket">
       <i class="fab fa-get-pocket " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="reddit">
       <i class="fab fa-reddit " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&name=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%0aFor%20this%20problem%20we%20need%20to%20find%20the%20indices%20i%20and%20j%20%2c%20maximising%20the%20equation%20prices%5bj%5d%20-%20prices%5bi%5d%2c%20given%20j%20%26gt%3b%20i.%20Lets%20first%20approach%20the%20brute%20force%20solution%20of%20this%20problem.%0a1.%20Brute%20force%3a%20Complexity%3a%20O%28n%5e2%29%0aThis%20is%20pretty%20straight%20forward.%20We%20iterate%20through%20the%20entire%20array%20and%20for%20each%20element%20we%20check%20the%20difference%20between%20the%20indices%20larger%20than%20the%20current%20index." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&name=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm&description=Problem%20%3a%20https%3a%2f%2fleetcode.com%2fproblems%2fbest-time-to-buy-and-sell-stock%2f%0aFor%20this%20problem%20we%20need%20to%20find%20the%20indices%20i%20and%20j%2c%20maximising%20the%20equation%20prices%5bj%5d%20-%20prices%5bi%5d%2c%20given%20j%20%26gt%3b%20i.%20Lets%20first%20approach%20the%20brute%20force%20solution%20of%20this%20problem.%0a1.%20Brute%20force%3a%20Complexity%3a%20O%28n%5e2%29%0aThis%20is%20pretty%20straight%20forward.%20We%20iterate%20through%20the%20entire%20array%20and%20for%20each%20element%20we%20check%20the%20difference%20between%20the%20indices%20larger%20than%20the%20current%20index.%0aCode%3a%0a1int%20maxProfit%28vector%26lt%3bint%26gt%3b%26amp%3b%20prices%29%20%7b%202%093%09int%20maxProfit%20%3d%200%3b%204%095%09for%28int%20i%20%3d%200%3b%20i%20%26lt%3b%20prices." aria-label="Tumblr">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&t=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&t=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Hacker News">
       <i class="fab fa-hacker-news " aria-hidden="true"></i>
     </a>
   </li>
@@ -181,7 +187,7 @@ This is pretty straight forward. We iterate through the entire array and for eac
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
-        LeetCode 121: Best time to buy and sell stock
+        LeetCode 121: Best time to buy and sell stock - Kadane&#39;s Algorithm
       </h1>
       <div class="meta">
         
@@ -206,10 +212,10 @@ This is pretty straight forward. We iterate through the entire array and for eac
   
     
     <div class="content" itemprop="articleBody">
-      <p>LeetCode 121: Best time to buy and sell stock</p>
-<p>For this problem we need to find the indices <em>i</em> and <em>j</em> , maximising the equation <em>prices[j] - prices[i]</em>, given <em>j &gt; i</em>. Lets first approach the brute force solution of this problem.</p>
+      <p><em>Problem : <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock/</a></em></p>
+<p>For this problem we need to find the indices i and j, maximising the equation prices[j] - prices[i], given j &gt; i. Lets first approach the brute force solution of this problem.</p>
 <h3 id="1-brute-force">1. Brute force:</h3>
-<p><strong>Complexity: <em>O(n^2)</em></strong></p>
+<p><strong>Complexity: O(n^2)</strong></p>
 <p>This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.</p>
 <p>Code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8be9fd">int</span> <span style="color:#50fa7b">maxProfit</span>(vector<span style="color:#ff79c6">&lt;</span><span style="color:#8be9fd">int</span><span style="color:#ff79c6">&gt;&amp;</span> prices) {
@@ -225,9 +231,9 @@ This is pretty straight forward. We iterate through the entire array and for eac
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>	<span style="color:#ff79c6">return</span> maxProfit;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>}
 </span></span></code></pre></div><h3 id="2-array-sum-approach">2. Array sum approach</h3>
-<p><strong>Complexity: <em>O(n)</em></strong></p>
-<p>In this solution we calculate 2 arrays. The first which is calculated from left to right, denotes the minimum value in the array until this index from left. Let&rsquo;s call this array <em>minArray</em>. The second which is calculated from right to left, denotes the maximum value of the array until this index from right. Let&rsquo;s call this <em>maxArray</em>.</p>
-<p>Then to find out the max profit, we maximise <em>maxArray[i] - minArray[i]</em>.</p>
+<p><strong>Complexity: O(n)</strong></p>
+<p>In this solution we calculate 2 arrays. The first which is calculated from left to right, denotes the minimum value in the array until this index from left. Let&rsquo;s call this array minArray. The second which is calculated from right to left, denotes the maximum value of the array until this index from right. Let&rsquo;s call this maxArray.</p>
+<p>Then to find out the max profit, we maximise maxArray[i] - minArray[i].</p>
 <p>Code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8be9fd">int</span> <span style="color:#50fa7b">maxProfit</span>(vector<span style="color:#ff79c6">&lt;</span><span style="color:#8be9fd">int</span><span style="color:#ff79c6">&gt;&amp;</span> prices) {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>        
@@ -252,41 +258,41 @@ This is pretty straight forward. We iterate through the entire array and for eac
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>    
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>    <span style="color:#ff79c6">return</span> maxProfit;
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>}
-</span></span></code></pre></div><p>At any index <em>i</em>,</p>
-<p><em>minArray[i]</em> → the minimum stock price from <em>i</em> to the index 0.</p>
-<p><em>maxArray[i]</em> → the maximum stock price from <em>i</em> to the index <em>size - 1</em>.</p>
-<p>So at some point, the optimal buy price will be to the left of <em>i</em> and the optimal sell price will be to the right of <em>i.</em> So if we maximise the difference between both the arrays, we get the optimal solution.</p>
+</span></span></code></pre></div><p>At any index i,</p>
+<p>minArray[i] → the minimum stock price from i to the index 0.</p>
+<p>maxArray[i] → the maximum stock price from i to the index size - 1.</p>
+<p>So at some point, the optimal buy price will be to the left of i and the optimal sell price will be to the right of i. So if we maximise the difference between both the arrays, we get the optimal solution.</p>
 <h3 id="3-kadanes-algorithm">3. Kadane&rsquo;s Algorithm</h3>
-<p><strong>Complexity: <em>O(n)</em></strong></p>
+<p><strong>Complexity: O(n)</strong></p>
 <p>This could also represented as the maximum subarray problem. It&rsquo;s the task of finding a contiguous subarray with the largest sum, with a given one dimensional array. So how are we going to represent the problem?</p>
-<p>Let the array <em>prices</em> contain the list of stock prices.</p>
-<p>Lets calculate the array <em>x</em>  such that</p>
-<p><em>x[i] = 0</em>, when <em>i == 0</em></p>
-<p><em>x[i] = prices[i]</em> - <em>prices[i - 1]</em>, when <em>i!=0</em></p>
-<p>So for an array of size 5, <em>x</em> is calculated as follows:</p>
-<p><em>x[0] = 0</em></p>
-<p><em>x[1] = prices[1] - prices[0]</em></p>
-<p><em>x[2] = prices[2] - prices[1]</em></p>
-<p><em>x[3] = prices[3] - prices[2]</em></p>
-<p><em>x[4] = prices[4] - prices[3]</em></p>
-<p><em>x[5] = prices[5] - prices[4]</em></p>
-<p>Let&rsquo;s consider the indices 1 and 4 as the prices with the maximum difference. Then we need to calculate the sum elements from <em>x[2]</em> to <em>x[4]</em>.</p>
-<p><em>x[2] + x[3] + x[4] = prices[2] - prices[1] + prices[3] - prices[2] + prices[4] - prices[3]</em></p>
+<p>Let the array prices contain the list of stock prices.</p>
+<p>Lets calculate the array x  such that</p>
+<p>x[i] = 0, when i == 0</p>
+<p>x[i] = prices[i] - prices[i - 1], when i!=0</p>
+<p>So for an array of size 5, x is calculated as follows:</p>
+<p>x[0] = 0</p>
+<p>x[1] = prices[1] - prices[0]</p>
+<p>x[2] = prices[2] - prices[1]</p>
+<p>x[3] = prices[3] - prices[2]</p>
+<p>x[4] = prices[4] - prices[3]</p>
+<p>x[5] = prices[5] - prices[4]</p>
+<p>Let&rsquo;s consider the indices 1 and 4 as the prices with the maximum difference. Then we need to calculate the sum elements from x[2] to x[4].</p>
+<p>x[2] + x[3] + x[4] = prices[2] - prices[1] + prices[3] - prices[2] + prices[4] - prices[3]</p>
 <p>cancelling the middle terms we get,</p>
-<p><em>x[2] + x[3] + x[4] = prices[4] - prices[1]</em></p>
-<p>So to find the solution, we need to find the maximum subarray of the array <em>x.</em> We can use Kadane&rsquo;s algorithm for this problem.</p>
+<p>x[2] + x[3] + x[4] = prices[4] - prices[1]</p>
+<p>So to find the solution, we need to find the maximum subarray of the array x. We can use Kadane&rsquo;s algorithm for this problem.</p>
 <p><strong>Kadane&rsquo;s Algorithm for the maximum subarray problem:</strong></p>
-<p>In this algorithm, for each index <em>i</em> in the array, we calculate the maximum subarray ending with <em>i</em>. The maximum subarray for index 0 will be the element itself as there is only one element till 0. Then we find the value for the next element using this condition:</p>
-<p><em>maxCurrent = max(a[i], a[i] + maxCurrent)</em></p>
+<p>In this algorithm, for each index i in the array, we calculate the maximum subarray ending with i. The maximum subarray for index 0 will be the element itself as there is only one element till 0. Then we find the value for the next element using this condition:</p>
+<p>maxCurrent = max(a[i], a[i] + maxCurrent)</p>
 <p>where,</p>
-<p><em>maxCurrent</em> → max  subarray till the current index and</p>
-<p><em>a</em> → array in consideration</p>
-<p>So for every iteration from index 1, the max subarray must be either the element itself(subarray size 1), or the element added to the previous max subarray ending at <em>i - 1.</em> We keep track of the maximum value of <em>maxCurrent</em> for each index, which is the solution.</p>
-<p>According to the stocks problem statement, the profit should not be negative. If the optimal solution is negative, then we should return 0. So we initialise <em>maxCurrent</em> as 0.  Also unlike the maximum subarray problem, when we consider only one element as part of the subarray, the profit is 0 as we can&rsquo;t buy and sell on the same day.</p>
-<p>So considering all this, for this problem we have to choose the maximum of 0 and  <em>x[i] + maxCurrent</em>.</p>
-<p><em>maxCurrent = max(0, x[i] + maxCurrent)</em></p>
-<p>Replacing <em>x</em>  with <em>prices,</em></p>
-<p><em>maxCurrent = max(0, prices[i] - prices[i - 1] + maxCurrent)</em></p>
+<p>maxCurrent → max  subarray till the current index and</p>
+<p>a → array in consideration</p>
+<p>So for every iteration from index 1, the max subarray must be either the element itself(subarray size 1), or the element added to the previous max subarray ending at i - 1. We keep track of the maximum value of maxCurrent for each index, which is the solution.</p>
+<p>According to the stocks problem statement, the profit should not be negative. If the optimal solution is negative, then we should return 0. So we initialise maxCurrent as 0.  Also unlike the maximum subarray problem, when we consider only one element as part of the subarray, the profit is 0 as we can&rsquo;t buy and sell on the same day.</p>
+<p>So considering all this, for this problem we have to choose the maximum of 0 and  x[i] + maxCurrent.</p>
+<p>maxCurrent = max(0, x[i] + maxCurrent)</p>
+<p>Replacing x  with prices,</p>
+<p>maxCurrent = max(0, prices[i] - prices[i - 1] + maxCurrent)</p>
 <p>Code:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#8be9fd">int</span> <span style="color:#50fa7b">maxProfit</span>(vector<span style="color:#ff79c6">&lt;</span><span style="color:#8be9fd">int</span><span style="color:#ff79c6">&gt;&amp;</span> prices) {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>        
@@ -324,6 +330,8 @@ This is pretty straight forward. We iterate through the entire array and for eac
          
           <li><a href="/">Home</a></li>
          
+          <li><a href="/posts">Writings</a></li>
+         
           <li><a href="/about">About</a></li>
         
       </ul>
@@ -355,47 +363,47 @@ This is pretty straight forward. We iterate through the entire array and for eac
   
   
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f" aria-label="Facebook">
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f" aria-label="Facebook">
       <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&text=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&text=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Twitter">
       <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Linkedin">
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Linkedin">
       <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&is_video=false&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&is_video=false&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Pinterest">
       <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock&body=Check out this article: https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f" aria-label="Email">
+    <a class="icon" href="mailto:?subject=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm&body=Check out this article: https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f" aria-label="Email">
       <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Pocket">
       <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="reddit">
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&title=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="reddit">
       <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&name=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock&description=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%0aFor%20this%20problem%20we%20need%20to%20find%20the%20indices%20i%20and%20j%20%2c%20maximising%20the%20equation%20prices%5bj%5d%20-%20prices%5bi%5d%2c%20given%20j%20%26gt%3b%20i.%20Lets%20first%20approach%20the%20brute%20force%20solution%20of%20this%20problem.%0a1.%20Brute%20force%3a%20Complexity%3a%20O%28n%5e2%29%0aThis%20is%20pretty%20straight%20forward.%20We%20iterate%20through%20the%20entire%20array%20and%20for%20each%20element%20we%20check%20the%20difference%20between%20the%20indices%20larger%20than%20the%20current%20index." aria-label="Tumblr">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&name=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm&description=Problem%20%3a%20https%3a%2f%2fleetcode.com%2fproblems%2fbest-time-to-buy-and-sell-stock%2f%0aFor%20this%20problem%20we%20need%20to%20find%20the%20indices%20i%20and%20j%2c%20maximising%20the%20equation%20prices%5bj%5d%20-%20prices%5bi%5d%2c%20given%20j%20%26gt%3b%20i.%20Lets%20first%20approach%20the%20brute%20force%20solution%20of%20this%20problem.%0a1.%20Brute%20force%3a%20Complexity%3a%20O%28n%5e2%29%0aThis%20is%20pretty%20straight%20forward.%20We%20iterate%20through%20the%20entire%20array%20and%20for%20each%20element%20we%20check%20the%20difference%20between%20the%20indices%20larger%20than%20the%20current%20index.%0aCode%3a%0a1int%20maxProfit%28vector%26lt%3bint%26gt%3b%26amp%3b%20prices%29%20%7b%202%093%09int%20maxProfit%20%3d%200%3b%204%095%09for%28int%20i%20%3d%200%3b%20i%20%26lt%3b%20prices." aria-label="Tumblr">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2f2021-12-01-lc%2f&t=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fkarthikmuru.github.io%2fposts%2fkadanes-algorithm%2f&t=LeetCode%20121%3a%20Best%20time%20to%20buy%20and%20sell%20stock%20-%20Kadane%27s%20Algorithm" aria-label="Hacker News">
       <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
     </a>
   </li>
@@ -430,6 +438,8 @@ This is pretty straight forward. We iterate through the entire array and for eac
       <ul>
          
         <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">Writings</a></li>
          
         <li><a href="/about">About</a></li>
         

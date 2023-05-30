@@ -8,15 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Dec 2022 02:42:06 +0000</lastBuildDate><atom:link href="https://karthikmuru.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LeetCode 121: Best time to buy and sell stock</title>
-      <link>https://karthikmuru.github.io/posts/2021-12-01-lc/</link>
+      <title>LeetCode 121: Best time to buy and sell stock - Kadane&#39;s Algorithm</title>
+      <link>https://karthikmuru.github.io/posts/kadanes-algorithm/</link>
       <pubDate>Thu, 01 Dec 2022 02:42:06 +0000</pubDate>
       
-      <guid>https://karthikmuru.github.io/posts/2021-12-01-lc/</guid>
-      <description>LeetCode 121: Best time to buy and sell stock
-For this problem we need to find the indices $i$ and $j$ , maximising the equation $prices[j] - prices[i]$, given $j &amp;gt; i$. Lets first approach the brute force solution of this problem.
-1. Brute force: Complexity: $O(n^2)$
-This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.</description>
+      <guid>https://karthikmuru.github.io/posts/kadanes-algorithm/</guid>
+      <description>Problem : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+For this problem we need to find the indices i and j, maximising the equation prices[j] - prices[i], given j &amp;gt; i. Lets first approach the brute force solution of this problem.
+1. Brute force: Complexity: O(n^2)
+This is pretty straight forward. We iterate through the entire array and for each element we check the difference between the indices larger than the current index.
+Code:
+1int maxProfit(vector&amp;lt;int&amp;gt;&amp;amp; prices) { 2	3	int maxProfit = 0; 4	5	for(int i = 0; i &amp;lt; prices.</description>
     </item>
     
     <item>
