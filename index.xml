@@ -27,8 +27,26 @@ Code:
       <pubDate>Wed, 24 Aug 2016 17:51:42 +0000</pubDate>
       
       <guid>https://karthikmuru.github.io/about/</guid>
-      <description>Github: karthikmuru
+      <description>Resume: Resume
+Github: karthikmuru
 Linkedin: karthikmurugesan28</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://karthikmuru.github.io/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://karthikmuru.github.io/resume/</guid>
+      <description>Resume: Resume Email: murugesan.karthik@outlook.com LinkedIn: karthikmurugesan28
+Projects: Projects
+Education Degree: Master of Science Major: Computer Science
+University: Arizona State University Graduation Year: 2023
+Degree: Bachelor of Technology Major: Information Technology
+University: Anna University Graduation Year: 2018
+Skills Languages: Java, Python, C/C++, SQL (MySQL, Postgres), NoSQL, JavaScript, Ruby
+Frameworks: Java Spring, Ruby on Rails, Node.js, Flask
+Tools, Databases, and OS: AWS (Lambda, SQS, SNS, EC2, DynamoDB, S3), Pytorch, Tensorflow, Git, Linux/Unix, Docker, Kubernetes</description>
     </item>
     
   </channel>
